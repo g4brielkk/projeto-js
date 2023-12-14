@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+/*==============================
+        BODY
+  =================================*/
+
+  body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+  } 
+
+  .margin-t-40{
+    margin-top: 40px;
+  }
+ .margin-t-20{
+   margin-top: 20px;
+ }
+ /*==============================
+        LOGO
+  =================================*/
+
+  .logo {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+  }
+  
+  /*==============================
+        NAVBAR
+  =================================*/
+
+  .navbar-custom{
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    position: fixed; /* Faz com que a posição da navbar seja fixa ao cabeçalho da página*/
+  }
+  
+  .navbar-custom .navbar-light li a {
+    color: rgba(255, 255, 255);
+    font-size: 13px;
+    border-bottom: 3px solid transparent;
+    background-color: transparent !important;
+    padding: 7px 0;
+    margin: 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration-line: none;
+    font-family: 'Anton', sans-serif;
+  }
+
+  .navbar-custom>.container-fluid{
+    width: 90%;
+  }
+
+  .navbar-custom .navbar-light li a:hover {
+    color: rgb(36, 0, 0);
+  }
+
+   
+  /*==============================
+        HOME
+  =================================*/
+
+  .home-bg{
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    opacity: 0.40;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .main-home {
+      height: 100vh;
+      padding: 60px 0;
+      z-index: 1;
+      text-align: center;
+      position: relative;
+      color: #fff;
+      background: #000;
+      min-height: 400px;
+  }
+
+  .home-header-content {
+      transform: translateY(-50%);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+  }
+
+  h1#textH {
+    font-family: 'Anton', sans-serif;
+    color: #FFFF;
+    text-shadow: 7px 9px 10px rgb(0, 0, 0);;
+}
+
+  .textHome::after{
+    content: '|';
+    opacity: 1;
+    animation: pisca.7s infinite;
+    text-transform: uppercase;
+  }
+
+ /*==== ANIMAÇÃO DAS LETRAS - 
+ FAZ COM QUE O CURSOR PISQUE AO FINAL DA FRASE ====*/
+ .textHome::after{
+  content: '|';
+  opacity: 1;
+  animation: pisca.7s infinite;
+  text-transform: uppercase;
+}
+
+@keyframes pisca{
+  0%, 100%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0;
+  }
+}
+
+ /*==============================
+        SOBRE MIM
+  =================================*/
+
+  .section-title {
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .sub-title {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+  }
+
+  .about-t {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .about-desc{
+    line-height: 24px;
+    padding-top: 10px;
+    text-align: justify;
+    margin-inline-end: 15px;
+  }
+
+/*==============================
+        CONTADOR DE RESULTADOS
+  =================================*/
+  .col-md-3 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+ 
+  .counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    color: #312f09;
+  }
+  
+  .padding-60{
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .result{
+    background: rgb(75, 0, 0);
+    font-family: 'Cinzel', Courier, monospace;
+    text-transform: uppercase;
+  }
+
+ /*==============================
+        SERVÇOS
+  =================================*/
+  #services{
+    line-height: 24px;
+    padding-top: 10px;
+    text-align: justify;
+    margin-inline-end: 15px;
+  }
+
+  .parallax-window {
+    min-height: 400px;
+    background: transparent;
+  }
+
+  #Duas-Cara {
+    border-radius: 20px;
+  }
+
+  #coringa {
+    border-radius: 20px;
+  }
+
+  #alerquina{
+    border-radius: 20px;
+  }
+
+ 
+  
+/*==============================
+       PROJETOS
+  =================================*/
+
+  #works{
+    background: ghostwhite;
+  }
+  
+  .worksImg:hover {
+    opacity: 0.7;
+  }  
+  
+  .worksImg {
+    cursor: pointer;
+    transition: 0.3s;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+    border-radius: 2ex;
+  }
+
+  .modal-img {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9); 
+    image-resolution: inherit;
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #modal{
+    max-height: 550px;
+  }
+
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .img-gallery{
+    display: flex;
+    justify-content: center;
+  }
+
+section ul {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+  justify-content: center;
+}
+
+section ul li{
+  list-style: none;
+  padding: 8px 20px;
+  margin: 5px ;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1px solid rgb(216, 231, 243);
+  border-radius: 2ex;
+}
+
+section ul li.active{
+  background: rgb(228, 230, 114);
+}
+
+section ul li:hover {
+  background: rgb(205, 207, 73);
+  color: rgb(0, 0, 0);
+  border: 0px;
+}
+
+/*=======================================
+     BLOG
+  =======================================*/
+
+.blog-desc{
+	line-height: 26px;
+}
+
+.blog-border{
+	height: 1px;
+	background-color: #dedede;
+	margin: 18px 0;
+	width: 60px;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  background-color: #bbb;
+}
+
+#loading{
+  text-align: center;
+}
+
+/*=======================================
+     DEPOIMENTOS
+  =======================================*/
+ 
+  .testimony-desc{
+    font-size: 18px;
+    line-height: 32px;
+    font-style: italic;
+    margin-bottom: 25px;
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center justify;
+    margin-top: 12px;
+    top: 40px;
+   }
+   
+  .user-img {
+    height: 70px !important;
+    width: 100px !important;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .slideShow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+  }
+
+  /*==============================
+       CONTATOS
+  =================================*/
+
+  #contacts{
+    background-color: rgb(39, 39, 34);  
+  }
+
+  .text-contact{
+    text-align: start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(82, 82, 68);
+  }
+
+  .submitBnt {
+    border: 1px solid rgb(136, 112, 8);
+    background: #f2f2f2;
+    margin-top: 5px;
+  }
+
+  .footer .copy-rights {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 30px 40px;
+  }
